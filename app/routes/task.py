@@ -32,7 +32,7 @@ def update(task_id: int, updates: TaskUpdate, db: Session = Depends(get_db)):
     if not task:
         raise HTTPException(status_code=404, detail="Task not found")
 
-    return task_service.update_task(db, task, updates.dict())
+    return task_service.update_task(db, task, updates.model_dump())
 
 
 @router.delete("/{task_id}")
