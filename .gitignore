@@ -56,11 +56,13 @@ pytestdebug.log
 *.mo
 *.pot
 
-# Django stuff:
+# Database stuff:
 *.log
 local_settings.py
 db.sqlite3
 db.sqlite3-journal
+tasks.db
+tasks.db-journal
 
 # Flask stuff:
 instance/
